@@ -213,10 +213,6 @@ const { name, age: a } = props;
 // name == 'Max Mustermann', a == 42
 ```
 
-Spreading
----------
-TODO
-
 Klassen
 -------
 
