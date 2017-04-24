@@ -225,12 +225,12 @@ class Person {
 
   // The constructor has always the name constructor
   constructor(name) {
-  this.age = 0;
-  this.name = name;
+    this.age = 0;
+    this.name = name;
   }
 
   printAge() {
-  console.log(this.age);
+    console.log(this.age);
   }
 
 }
@@ -244,8 +244,8 @@ Classes support inheritance with a simple unified syntax:
 ```js
 class Client extends Person {
   constructor(name, address) {
-  super(name);
-  this.address = address;
+    super(name);
+    this.address = address;
   }
 }
 ```
