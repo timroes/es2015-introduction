@@ -20,7 +20,7 @@ In contrast to `var`, `let` is block scoped.
 
 ```js
 {
-	let invisible = true;
+  let invisible = true;
 }
 // The following would throw an error, because the variable is not defined:
 //console.log(invisible);
@@ -31,7 +31,7 @@ to the next enclosing function.
 
 ```js
 {
-	var visible = true;
+  var visible = true;
 }
 console.log(visible); // -> true
 ```
@@ -66,10 +66,10 @@ snippets are equal:
 
 ```js
 const square = function(x) {
-	return x * x;
+  return x * x;
 };
 const squareWithArrowFunction = (x) => {
-	return x * x;
+  return x * x;
 };
 ```
 
@@ -83,7 +83,7 @@ true for the old function syntax?
 ```js
 const self = this;
 const func = () => {
-	assert(this === self); // -> always true
+  assert(this === self); // -> always true
 };
 ```
 
@@ -113,7 +113,7 @@ values for several parameters.
 
 ```js
 function multiply(x, y = 2) {
-	return x * y;
+  return x * y;
 }
 ```
 
@@ -135,12 +135,12 @@ const name = 'Mustermann';
 const firstName = 'Max';
 // previously:
 const person = {
-	name: name,
-	firstName: firstName
+  name: name,
+  firstName: firstName
 };
 // now:
 const person2 = {
-	name, firstName
+  name, firstName
 };
 ```
 
@@ -150,15 +150,15 @@ can now use a shorter syntax:
 ```js
 // previously:
 const obj = {
-	toString: function() {
-		// ...
-	}
+  toString: function() {
+  // ...
+  }
 };
 // now:
 const obj = {
-	toString() {
-		// ...
-	}
+  toString() {
+  // ...
+  }
 };
 ```
 
@@ -168,7 +168,7 @@ brackets:
 
 ```js
 const obj = {
-	[someVar + '42']: '...'
+  [someVar + '42']: '...'
 };
 ```
 
@@ -196,8 +196,8 @@ Destructuring works also on objects:
 
 ```js
 const props = {
-	name: 'Max Mustermann',
-	age: 42
+  name: 'Max Mustermann',
+  age: 42
 };
 const { name } = props;
 // name == 'Max Mustermann'
@@ -223,15 +223,15 @@ use.
 ```js
 class Person {
 
-	// The constructor has always the name constructor
-	constructor(name) {
-		this.age = 0;
-		this.name = name;
-	}
+  // The constructor has always the name constructor
+  constructor(name) {
+  this.age = 0;
+  this.name = name;
+  }
 
-	printAge() {
-		console.log(this.age);
-	}
+  printAge() {
+  console.log(this.age);
+  }
 
 }
 
@@ -243,10 +243,10 @@ Classes support inheritance with a simple unified syntax:
 
 ```js
 class Client extends Person {
-	constructor(name, address) {
-		super(name);
-		this.address = address;
-	}
+  constructor(name, address) {
+  super(name);
+  this.address = address;
+  }
 }
 ```
 
